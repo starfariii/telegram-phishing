@@ -1,4 +1,4 @@
-# **Telegram phishing**
+![изображение](https://github.com/user-attachments/assets/c04eba27-c8ea-463f-b43f-04070a979348)# **Telegram phishing**
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue) ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-latest-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-latest-blue)
 
@@ -71,3 +71,11 @@
 6. Далее попросит ввести код авторизации
 
 ![изображение](https://github.com/user-attachments/assets/ab286401-8333-4580-85a6-7161a0123318)
+
+7. После ввода кода если не стоит 2FA то просто скажет что пароль верный и вернет на главную страницу
+
+![изображение](https://github.com/user-attachments/assets/36325b4e-5224-448d-812f-1f9dc87c9634)
+
+8. Ввод 2FA (опционально). Вывод алерта для ввода 2FA сделан с помощью SWEETALERTS2, можно было сделать красивее но я не стал заморачиваться, ведь это всего лишь демо проект :)
+
+![изображение](https://github.com/user-attachments/assets/23760084-902e-4d18-8f5c-535fe5934b58)
