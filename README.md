@@ -1,4 +1,4 @@
-![изображение](https://github.com/user-attachments/assets/c04eba27-c8ea-463f-b43f-04070a979348)# **Telegram phishing**
+# **Telegram phishing**
 
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue) ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue) ![FastAPI](https://img.shields.io/badge/FastAPI-latest-green) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-latest-blue)
 
