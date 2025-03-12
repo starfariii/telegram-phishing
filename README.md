@@ -47,9 +47,9 @@
 ---
 
 ## **Скриншоты**
-`/start`
+1. Открываем бота и запускаем командой `/start`
 ![изображение](https://github.com/user-attachments/assets/a940ce4c-e7d5-43db-86f5-5a041a970fab)
 
-`/admin`
+2. Входим в админку командой `/admin`
 ![изображение](https://github.com/user-attachments/assets/630bc76a-0e76-4f14-bb73-335a4d9a9390)
 
