@@ -52,7 +52,13 @@
 ![изображение](https://github.com/user-attachments/assets/a940ce4c-e7d5-43db-86f5-5a041a970fab)
 
 
-2. Входим в админку командой `/admin`
+2. Входим в админку командой `/admin`. Кнопка выгрузки нужно для получения всех тг сессий (тг аккаунтов). 
    
 ![изображение](https://github.com/user-attachments/assets/630bc76a-0e76-4f14-bb73-335a4d9a9390)
+
+3. Открываем вкладку для настройки конфигурации и следуем инструкции из сообщения
+  
+![изображение](https://github.com/user-attachments/assets/c7fae3ef-6589-465d-b2b3-367f7b69743d)
+
+
 
