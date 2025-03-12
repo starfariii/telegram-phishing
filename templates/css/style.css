@@ -1,0 +1,245 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.description {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+    max-width: 90%;
+    transition: color 0.3s ease;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.phone-number {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.code-inputs {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.code-inputs input {
+    width: 12%;
+    min-width: 40px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: inherit;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.code-inputs input:focus {
+    outline: none;
+    border-color: #2a9d8f;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: none;
+    text-align: center;
+}
+
+.button-pass {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 80%;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.keyboard button {
+    width: 100%;
+    height: 45px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.keyboard button:hover {
+    background-color: #ddd;
+}
+
+.keyboard button:active {
+    background-color: #ccc;
+}
+
+.keyboard .delete {
+    grid-column: span 2;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.modal-content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal-content .description {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.password-input-container input {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #333;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.password-input-container input:focus {
+    outline: none;
+    border-color: #2a9d8f;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.modal-buttons button {
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-buttons #submit-password {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.modal-buttons #submit-password:hover {
+    background-color: #20c997;
+}
+
+.modal-buttons #cancel-password {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.modal-buttons #cancel-password:hover {
+    background-color: #ff7b7b;
+}
+
+.modal-content {
+    transform: scale(0.9);
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .code-inputs input {
+        width: 15%;
+        font-size: 1.2rem;
+    }
+
+    .keyboard button {
+        height: 40px;
+        font-size: 1rem;
+    }
+}

